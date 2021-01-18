@@ -20,7 +20,7 @@ if(nominations === null){
       setLoading(true);
      
       try {
-        const response = await fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=${process.env.REACT_APP_MOVIE_API_KEY}`);
+        const response = await fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=33bbde9d`);
         const data = await response.json();
         console.log(data)
         const [ movies ] = Object.entries(data);
